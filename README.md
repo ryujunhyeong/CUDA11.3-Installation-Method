@@ -14,7 +14,7 @@ sudo bash -c "echo blacklist nouveau > /etc/modprobe.d/blacklist-nvidia-nouveau.
 sudo bash -c "echo options nouveau modeset=0 >> /etc/modprobe.d/blacklist-nvidia-nouveau.conf"
 ```
 
-## 🙋‍♀️ 비활성화 확인 방법!!
+### 🙋‍♀️ 비활성화 확인 방법!!
 ```bash
  cat /etc/modprobe.d/blacklist-nvidia-nouveau.conf
 ```
@@ -39,6 +39,8 @@ sudo apt install nvidia-driver-470 # 그래픽카드 버전에 맞는 드라이�
 sudo sh cuda_11.3.0_465.19.01_linux.run # 위에서 다운받은 cuda_toolkit
 
 ```
+
+
 ### 👉 Toolkit 설치시 참고
 
 - Driver은 해제하고 설치해야함 ( 위에서 드라이버 설치를 완료했기 때문 )
@@ -62,6 +64,8 @@ source ~/.bashrc
 nvcc -V
 nvidia-smi
 ```
+
+
 
 ## CUDNN 8.2 설치 방법
 ### 🙋‍♀️ CuDNN 다운로드 링크
