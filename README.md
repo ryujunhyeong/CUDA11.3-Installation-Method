@@ -97,4 +97,12 @@ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 # 최종 설치 확인
 ﻿nvcc -V
 nvidia-smi
+
+# CUDA 사용 가능 확인
+python3
+import torch # torch가 설치 되어 있어야 함
+torch.cuda.is_available()
+
+👉 True # True가 나오면 CUDA 사용 가능 상태!!
+
 ```
