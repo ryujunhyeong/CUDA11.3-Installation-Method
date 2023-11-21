@@ -33,10 +33,12 @@ sudo reboot
 
 ## 🛠 CUDA Toolkit Install
 ```bash
-wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda_11.3.0_465.19.01_linux.run
 ubuntu-drivers devices # 그래픽 드라이브 최적 버전 추천
 sudo apt install nvidia-driver-470 # 그래픽카드 버전에 맞는 드라이버 설치
-sudo sh cuda_11.3.0_465.19.01_linux.run # 위에서 다운받은 cuda_toolkit
+
+# cuda11.3 다운로드
+wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda_11.3.0_465.19.01_linux.run
+sudo sh cuda_11.3.0_465.19.01_linux.run # 다운받은 cuda_toolkit
 
 ```
 
