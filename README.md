@@ -1,4 +1,4 @@
-## CUDA 11.3 & CuDNN 8.2 설치 방법
+## Linux20.04 CUDA 11.3 & CuDNN 8.2 설치 방법
 
 
 ## 🛠 기본 프로그램 설치 
@@ -65,8 +65,9 @@ nvidia-smi
 
 ## CUDNN 8.2 설치 방법
 ### 🙋‍♀️ CuDNN 다운로드 링크
-
+#### 로그인 후 다운 가능 (cuDNN Library for Linux (x86_64) 다운하면 됨)
 [다운로드 링크](https://developer.nvidia.com/rdp/cudnn-download)
+![스크린샷, 2023-11-21 11-39-11](https://github.com/ryujunhyeong/cuda11.3-installation-method/assets/70519298/bab96845-cecd-44ff-90ba-d15683a1ea14)
 
 ### 🛠 적용방법
 ```bash
@@ -81,6 +82,7 @@ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
 
+
 ### 👉 비활성화 성공시 출력 내용
 ```bash
 #define CUDNN_MAJOR 8
@@ -91,6 +93,7 @@ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 #endif /* CUDNN_VERSION_H */
 ```
+![스크린샷, 2023-11-21 11-38-35](https://github.com/ryujunhyeong/cuda11.3-installation-method/assets/70519298/84722469-7778-4586-b012-01f82ae16cc6)
 
 ### 🙋‍♀️ 최종 확인
 ```bash
@@ -104,5 +107,6 @@ import torch # torch가 설치 되어 있어야 함
 torch.cuda.is_available()
 
 👉 True # True가 나오면 CUDA 사용 가능 상태!!
-
 ```
+![스크린샷, 2023-11-21 11-37-49](https://github.com/ryujunhyeong/cuda11.3-installation-method/assets/70519298/2efe5f68-9446-4330-9052-844e3a36347a)
+
