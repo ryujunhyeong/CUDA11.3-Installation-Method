@@ -84,7 +84,7 @@ cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
 
 
-### 👉 비활성화 성공시 출력 내용
+### 👉 설치 성공시 출력 내용
 ```bash
 #define CUDNN_MAJOR 8
 #define CUDNN_MINOR 2
