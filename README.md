@@ -1,6 +1,6 @@
 # Linux20.04 CUDA 11.3 & CuDNN 8.2 설치 방법
 
-
+# CUDA 11.3 설치 방법
 ## 🛠 기본 프로그램 설치 
 
 ```bash
@@ -67,14 +67,14 @@ nvidia-smi
 
 
 
-## CUDNN 8.2 설치 방법
-### 🙋‍♀️ CuDNN 다운로드 링크
+# CUDNN 8.2 설치 방법
+## 🙋‍♀️ CuDNN 다운로드 링크
 #### 로그인 후 다운 가능 (cuDNN Library for Linux (x86_64) 다운하면 됨)
 - [다운로드 링크](https://developer.nvidia.com/rdp/cudnn-download)
   
 ![스크린샷, 2023-11-21 11-39-11](https://github.com/ryujunhyeong/cuda11.3-installation-method/assets/70519298/bab96845-cecd-44ff-90ba-d15683a1ea14)
 
-### 🛠 적용방법
+## 🛠 적용방법
 ```bash
 # 다운받은 CUDNN 파일이 있는곳에서 해야함!!
 sudo cp -P cuda/include/cudnn*.h /usr/local/cuda/include
